@@ -2,6 +2,7 @@
 
 * Студент: [Максим Митрохин](https://up.htmlacademy.ru/adaptive/32/user/2489173).
 * Наставник: [Анна Лисененкова]. (https://htmlacademy.ru/profile/ankhena)
+* Сайт: [Проект cat-energy]
 
 ---
 
