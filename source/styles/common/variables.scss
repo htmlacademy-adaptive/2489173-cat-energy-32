@@ -1,1 +1,25 @@
 /* здесь используйте глобальные переменные */
+/* Font Family */
+$primary-font-Family:"Lato", sans-serif;
+$secondary-font-Family:"Oswald", sans-serif;
+/* Texst colors */
+$primary-color-text-black:#444444;
+$basic-color-text-black:#000000;
+$additional-color-text-black:#111111;
+$special-color-text-black:#222222;
+$primary-color-text-white:#ffffff;
+/* Background colors */
+$primary-background-color-white:#ffffff;
+$primary-background-color-green:#68b738;
+$secondary-background-color-green:rgba(104, 183, 56, 0.85);
+$primary-background-color-grey:#f2f2f2;
+$secondary-background-color-grey:#eaeaea;
+/* Button colors */
+$primary-button-color-green:#68b738;
+$primary-button-color-green-2:#5faa2f;
+$secondary-button-color-grey:#f2f2f2;
+$secondary-button-color-grey-2:#ebebeb;
+/* Screen width */
+$desctop-screen-width: 1440px;
+$tablet-screen-width: 768px;
+$mobile-screen-width: 767px;

@@ -1,0 +1,15 @@
+.promotion {
+  background-color: $secondary-background-color-green;
+  background-image: url("../../images/cat-in-backpack-desctop.@1x.jpeg");
+  color: $primary-color-text-white;
+  font-family: $secondary-font-Family;
+  text-align: center;
+  padding: 80px;
+}
+
+.promotion__description {
+  color: $primary-color-text-white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}

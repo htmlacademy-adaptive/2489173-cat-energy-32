@@ -1,0 +1,19 @@
+.header-promo {
+  background-color: $secondary-background-color-green;
+  background-image: url("../../images/promo-cat-mobile@1x.jpeg");
+  color: $primary-color-text-white;
+  font-family: $secondary-font-Family;
+  text-align: center;
+}
+
+.header-promo__heading {
+  // color: $primary-color-text-white;
+  // font-family: $secondary-font-Family;
+  // font-size: 36px;
+  @include title($primary-color-text-white, $secondary-font-Family, 36px, 36px, 400);
+}
+
+.header-promo__text {
+  line-height: 14px;
+  text-transform: uppercase;
+}
