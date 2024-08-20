@@ -1,24 +1,95 @@
-.sports-nutrition-inner {
+.sports-nutrition__list {
   list-style-type: none;
 }
-
 
 .sports-nutrition__item {
   background-color: $primary-background-color-grey;
 }
 
 .sports-nutrition__heading {
-  @include title($basic-color-text-black, $secondary-font-Family, 24px, 37px, 400);
-  // color: $basic-color-text-black;
-  // font-family: $secondary-font-Family;
-  // font-size: 24px;
-  // line-height: 37px;
+  @include title($basic-color-text-dark, $secondary-font-family, 24px, 37px, 400);
   text-transform: uppercase;
+  position: relative;
+  display: flex;
+  padding-left: 68px;
+}
+
+.sports-nutrition__heading--slim::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 36px;
+  background-image: url("../../icons/cat-slim.svg");
+  background-repeat: no-repeat;
+  top: -3px;
+  left: 7px;
+}
+
+.sports-nutrition__heading--slim::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: $primary-background-color-accent;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.sports-nutrition__heading--pro::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 28px;
+  width: 67px;
+  background-image: url("../../icons/cat-pro.svg");
+  background-repeat: no-repeat;
+  top: 10px;
+  left: -8px;
+}
+
+.sports-nutrition__heading--pro::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: $primary-background-color-accent;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
 }
 
 .sports-nutrition__link {
-  color: $basic-color-text-black;
+  font-family: $secondary-font-family;
+  color: $basic-color-text-dark;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 10px;
+    mask-image: url("../../icons/arrow.svg");
+    mask-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-color: #000000;
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+    }
+  }
 }

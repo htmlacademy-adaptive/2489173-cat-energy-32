@@ -1,10 +1,5 @@
 .additional-product__heading {
-  @include title($special-color-text-black, $secondary-font-Family, 16px, 16px, 400);
-  // color: $special-color-text-black;
-  // font-family: $secondary-font-Family;
-  // font-size: 16px;
-  // font-weight: 400;
-  // line-height: 16px;
+  @include title($special-color-text-dark, $secondary-font-family, 16px, 16px, 400);
   text-transform: uppercase;
 }
 

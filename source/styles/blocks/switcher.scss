@@ -1,1 +1,10 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.switcher::before {
+  content: "";
+  background-image: url("../../icons/two-triangles.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
+  display: block;
+  width: 24px;
+  height: 18px;
+}

@@ -1,15 +1,10 @@
 .subscribe__heading {
-  @include title($basic-color-text-black, $secondary-font-Family, 24px, 24px, 400);
-  // color: $basic-color-text-black;
-  // font-family: $secondary-font-Family;
-  // font-size: 24px;
-  // font-weight: 400;
-  // line-height: 24px;
+  @include title($basic-color-text-dark, $secondary-font-family, 24px, 24px, 400);
 }
 
 .subscribe__description {
-  color: $basic-color-text-black;
-  font-family: $secondary-font-Family;
+  color: $basic-color-text-dark;
+  font-family: $secondary-font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

@@ -1,1 +1,10 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.main-header__toggle {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-image: url("../../icons/burger.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}

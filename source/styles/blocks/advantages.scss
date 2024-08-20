@@ -1,7 +1,51 @@
 .advantages__heading {
-  @include title($basic-color-text-black, $secondary-font-Family, 36px, 40px, 400);
-  // color: $basic-color-text-black;
-  // font-family: $secondary-font-Family;
-  // font-size: 36px;
-  // line-height: 40px;
+  @include title($basic-color-text-dark, $secondary-font-family, 36px, 40px, 400);
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $primary-background-color-accent;
+  background-position: 50% 50%;
+}
+
+.advantages__item--useful-material::before {
+  background-image: url("../../icons/leaf.svg");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--mixture::before {
+  background-image: url("../../icons/powder.svg");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--meal::before {
+  background-image: url("../../icons/cutlery.svg");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--result::before {
+  background-image: url("../../icons/alarm.svg");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
 }

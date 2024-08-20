@@ -1,13 +1,14 @@
 .button {
-  color: $primary-color-text-white;
-  background-color: $primary-background-color-green;
+
+  color: $primary-color-text-light;
+  background-color: $primary-background-color-accent;
   border: none;
-  font-family: $secondary-font-Family;
+  font-family: $secondary-font-family;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .button--secondary {
-  color: $primary-color-text-black;
+  color: $primary-color-text-dark;
   background-color: $secondary-button-color-grey;
 }
