@@ -1,1 +1,66 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+.products-list__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
+
+.product {
+  display: grid;
+  padding: 20px 20px 25px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img    link"
+    "img    description"
+    "button button";
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 25px;
+    width: 324px;
+    justify-content: end;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to bottom, #ffffff 80px, #f2f2f2 80px);
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 25px;
+    width: 245px;
+    justify-content: end;
+  }
+}
+
+.product__button {
+  grid-area: button;
+  text-align: center;
+}
+
+.product__description {
+  grid-area: description;
+}
+
+.product__picture {
+  grid-area: img;
+  place-self: center center;
+
+  @media (min-width: $tablet-screen-width) {
+    order: -1;
+  }
+}

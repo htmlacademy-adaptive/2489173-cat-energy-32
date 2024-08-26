@@ -1,26 +1,29 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.logo {
+  @media (max-width: $mobile-screen-width) {
+    display: grid;
+    grid-template-columns: 33px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 13px;
+  }
+}
+
+
+.logo__text {
+  justify-self: center;
+}
+
 .logo:hover {
   opacity: 0.8;
 }
 
 .logo:active {
   opacity: 0.6;
-}
-
-.logo__footer {
-  width: 128px;
-  height: 24px;
-  display: block;
-  mask-image: url("../../images/logo-text.svg");
-  mask-repeat: no-repeat;
-  mask-size: 128px 24px;
-  background-color: $additional-color-text-dark;
-}
-
-.logo__footer:hover {
-  background-color: #eaeaea;
-}
-
-.logo__footer:active {
-  background-color: #6b6b6b;
 }

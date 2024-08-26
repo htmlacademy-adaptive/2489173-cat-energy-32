@@ -1,1 +1,4 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.main-container__heading {
+  @include title($basic-color-text-dark, $secondary-font-family, 36px, 36px, 400);
+}

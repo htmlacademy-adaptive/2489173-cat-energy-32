@@ -1,1 +1,14 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 1220px;
+  }
+}

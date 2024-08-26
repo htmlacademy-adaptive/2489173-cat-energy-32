@@ -1,9 +1,28 @@
 .sports-nutrition__list {
   list-style-type: none;
+
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .sports-nutrition__item {
   background-color: $primary-background-color-grey;
+  padding: 21px 33px 18px 20px;
+
+  & + & {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-screen-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      margin-top: 0;
+    }
+  }
 }
 
 .sports-nutrition__heading {

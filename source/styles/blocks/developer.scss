@@ -1,29 +1,54 @@
 .developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   text-decoration: none;
-  display: flex;
   font-family: $primary-font-family;
   color: $primary-color-text-dark;
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html-academy");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $special-background-color-dark;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $primary-background-color-accent;
+    }
+  }
+
+  // &:active {
+  //   &::after {
+  //     background-color: $secondary-background-color-accent-alternate;
+  //   }
+  // }
 }
 
-.developer__image {
-  display: block;
-  width: 27px;
-  height: 34px;
-  mask-image: url("../../icons/stack.svg#logo-html-academy");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: $special-background-color-dark;
-}
+// .developer__image {
+//   display: block;
+//   width: 27px;
+//   height: 34px;
+//   mask-image: url("../../icons/stack.svg#logo-html-academy");
+//   mask-repeat: no-repeat;
+//   mask-position: center;
+//   background-color: $special-background-color-dark;
+// }
 
-.developer__image:hover {
-  background-color: $primary-background-color-accent;
-}
+// .developer__image:hover {
+//   background-color: $primary-background-color-accent;
+// }
 
-.developer__image:active {
-  background-color: $secondary-background-color-accent-alternate;
-}
+// .developer__image:active {
+//   background-color: $secondary-background-color-accent-alternate;
+// }
