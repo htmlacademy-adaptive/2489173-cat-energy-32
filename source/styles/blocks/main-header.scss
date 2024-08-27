@@ -3,9 +3,11 @@
   @media (min-width: $tablet-screen-width) {
     width: 704px;
     margin: 0 auto;
+    padding: 24px 0;
     display: grid;
     grid-template-columns: 174px 1fr;
     gap: 16px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-screen-width) {

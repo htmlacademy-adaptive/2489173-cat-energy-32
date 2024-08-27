@@ -6,6 +6,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
+  padding: 0;
 
   @media (max-width: $mobile-screen-width) {
     font-size: 20px;
@@ -17,10 +18,25 @@
     display: flex;
     justify-content: flex-end;
     font-size: 18px;
+    flex-wrap: wrap;
   }
 }
 
 .site-menu__link {
+  display: block;
+  padding: 23px 22px 22px;
   color: $basic-color-text-dark;
   text-decoration: none;
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 17px;
+  }
+
+  &:link:hover {
+    opacity: 0.6;
+  }
+
+  &:link:active {
+    opacity: 0.3;
+  }
 }
