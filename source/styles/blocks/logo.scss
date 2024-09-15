@@ -7,11 +7,15 @@
     gap: 16px;
   }
 
-  @media (min-width: $desktop-screen-width) {
+  @media (min-width: $tablet-screen-width) {
     display: grid;
     grid-template-columns: 60px 1fr;
     align-items: center;
     gap: 13px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    grid-template-columns: 70px 1fr;
   }
 }
 

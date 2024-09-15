@@ -1,14 +1,41 @@
 .button {
-
+  padding: 11px 12px;
+  display: inline-block;
+  font-size: 16px;
   color: $primary-color-text-light;
   background-color: $primary-background-color-accent;
   border: none;
   font-family: $secondary-font-family;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background-color: $primary-button-color-accent-alternate;
+  }
+
+  &:active {
+    color: rgba($primary-background-color-light, 0.3);
+    background-color: $primary-button-color-accent-alternate;
+  }
 }
 
 .button--secondary {
   color: $primary-color-text-dark;
   background-color: $secondary-button-color-grey;
+
+  &:hover {
+    background-color: $secondary-button-color-grey-alternate;
+  }
+
+  &:active {
+    color: rgba($primary-color-text-dark, 0.3);
+    background-color: $secondary-button-color-grey-alternate;
+  }
 }

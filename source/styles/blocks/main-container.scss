@@ -1,4 +1,33 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.main-container__header-promo {
+  padding: 26px 0 23px;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 34px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-top: 18px;
+  }
+}
+
 .main-container__heading {
   @include title($basic-color-text-dark, $secondary-font-family, 36px, 36px, 400);
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    padding-top: 37px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-top: 17px;
+    padding-bottom: 84px;
+  }
 }

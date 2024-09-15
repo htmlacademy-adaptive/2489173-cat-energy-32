@@ -16,7 +16,8 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__nav">
-      <div class="main-header__wrap">
+      <div class="main-header__wrap main-header__wrap--catalog">
+
         <a class="main-header__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="./images/logo-image-desktop.svg" type="image/svg+xml" width="70" height="59">
@@ -25,16 +26,17 @@
           </picture>
           <img class="logo-text" width="101" height="18" src="./images/logo-text.svg" alt="Текстовый логотип Cat Energy">
         </a>
-        <button class="main-header__toggle button-burger" type="button">
+        <button class="main-header__toggler" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="main-header__menu site-menu">
-        <li class="site-menu__item site-menu__item--current">
+
+      <ul class="main-header__menu site-menu site-menu--catalog">
+        <li class="site-menu__item ">
           <a class="site-menu__link" href="index.html">Главная</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Каталог продукции</a>
+        <li class="site-menu__item site-menu__item--current">
+          <a class="site-menu__link " href="#">Каталог продукции</a>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="#">Подбор программы</a>
@@ -43,7 +45,6 @@
 
     </nav>
   </header>
-
   <main class="page__main-container main-container">
     <header class="main-container__header container">
       <h1 class="main-container__heading">Каталог продукции</h1>
@@ -75,7 +76,7 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Курица</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">700 р.</dd>
+            <dd class="product__definition product__definition--price">700 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
@@ -98,7 +99,7 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Курица</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">1000 р.</dd>
+            <dd class="product__definition product__definition--price">1000 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
@@ -120,7 +121,7 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Рыба</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">700 р.</dd>
+            <dd class="product__definition product__definition--price">700 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
@@ -142,13 +143,13 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Рыбы</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">1000 р.</dd>
+            <dd class="product__definition product__definition--price">1000 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
         <article class="products-list__item product">
           <a class="product__link" href="#">
-            <h3 class="product__heading">Cat Energy Pro 500 г</h3>
+            <h3 class="product__heading">Cat Energy sLIM 500 г</h3>
           </a>
           <div class="product__picture">
             <picture>
@@ -164,13 +165,13 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Гречка</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">400 р.</dd>
+            <dd class="product__definition product__definition--price">400 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
         <article class="products-list__item product">
           <a class="product__link" href="#">
-            <h3 class="product__heading">Cat Energy Pro 1000 г</h3>
+            <h3 class="product__heading">Cat Energy SLIM 1000 г</h3>
           </a>
           <div class="product__picture">
             <picture>
@@ -186,13 +187,13 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Гречка</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">700 р.</dd>
+            <dd class="product__definition product__definition--price">700 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
         <article class="products-list__item product">
           <a class="product__link" href="#">
-            <h3 class="product__heading">Cat Energy Pro 500 г</h3>
+            <h3 class="product__heading">Cat Energy sLIM 500 г</h3>
           </a>
           <div class="product__picture">
             <picture>
@@ -208,24 +209,22 @@
             <dt class="product__title">Вкус</dt>
             <dd class="product__definition">Рис</dd>
             <dt class="product__title">Цена</dt>
-            <dd class="product__definition">500 р.</dd>
+            <dd class="product__definition product__definition--price">500 ₽</dd>
           </dl>
           <a class="product__button button" href="#">Заказать</a>
         </article>
 
-        <article class="products-list__item product">
-          <a class="product__link" href="#">
-            <h3 class="product__heading product__heading--plus">Показать еще 100500 товаров</h3>
-          </a>
-          <p class="product__text">На самом деле вкусов гораздо больше!</p>
-          <a class="product__button button button--secondary" href="#">показать все</a>
+        <article class="products-list__item products-list__item--show-more show-more ">
+          <h3 class="show-more__heading">Показать еще 100500 товаров</h3>
+          <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+          <a class="show-more__button button button--secondary" href="#">показать все</a>
         </article>
       </div>
     </section>
 
     <section class="main-container__additional-products additional-products">
-      <h2 class="additional-products__heading container">Дополнительные товары</h2>
       <div class="additional-products__inner container">
+        <h2 class="additional-products__heading">Дополнительные товары</h2>
         <ul class="additional-products__list additional-product">
           <li class="additional-product__item">
             <h3 class="additional-product__heading">Сахарозаменитель</h3>
@@ -233,7 +232,7 @@
               <dt class="visually-hidden">Объем</dt>
               <dd class="additional-product__definition">1 упаковка (100 г)</dd>
               <dt class="visually-hidden">Цена</dt>
-              <dd class="additional-product__definition">200 р.</dd>
+              <dd class="additional-product__definition additional-product__definition--price">200 ₽</dd>
             </dl>
             <a class="additional-product__button button" href="#">Заказать</a>
           </li>
@@ -244,7 +243,7 @@
               <dd class="additional-product__definition">5 литров</dd>
 
               <dt class="visually-hidden">Цена</dt>
-              <dd class="additional-product__definition">50 р.</dd>
+              <dd class="additional-product__definition additional-product__definition--price">50 ₽</dd>
             </dl>
 
             <a class="additional-product__button button" href="#">Заказать</a>
@@ -257,7 +256,7 @@
               <dd class="additional-product__definition">1 литр</dd>
 
               <dt class="visually-hidden">Цена</dt>
-              <dd class="additional-product__definition">100 р.</dd>
+              <dd class="additional-product__definition additional-product__definition--price">100 ₽</dd>
             </dl>
 
             <a class="additional-product__button button" href="#">Заказать</a>
@@ -271,7 +270,7 @@
               <dd class="additional-product__definition">1 упаковка (30 г)</dd>
 
               <dt class="visually-hidden">Цена</dt>
-              <dd class="additional-product__definition">300 р.</dd>
+              <dd class="additional-product__definition additional-product__definition--price">300 ₽</dd>
             </dl>
 
             <a class="additional-product__button button" href="#">Заказать</a>
@@ -279,7 +278,7 @@
         </ul>
         <div class="additional-products__promotion promotion ">
           <h3 class="visually-hidden">Специальное предложение</h3>
-          <p class="promotion__description">Закажите все и получите чехол для кота в подарок</p>
+          <p class="promotion__description">Закажите все <br>и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -302,14 +301,19 @@
     <footer class="main-container__contacts contacts contacts--catalog">
       <div class="contacts__inner container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="contacts__description">приглашаем <br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
-      <picture>
+      <!-- <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, /images/map-tablet@2x.png 2x">
         <img class="contacts-map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с магазином">
-      </picture>
+      </picture> -->
+
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725535358266!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
   </main>
 
@@ -341,7 +345,7 @@
       </ul>
 
       <a class="main-footer__developer developer " href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noreferrer noopener">
-        <span class="developer__website-developer">Html Academy</span>
+        <span class="developer__website-developer">HTML Academy</span>
         <!-- <img class="" src="#" width="27" height="34" alt="Логотип Html Academy " aria-hidden="true"> -->
         <!-- <span class="developer__image"></span> -->
 
@@ -349,6 +353,8 @@
     </div>
 
   </footer>
+  <script src="index.js"></script>
+
 </body>
 
 </html>

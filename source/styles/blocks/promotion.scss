@@ -1,13 +1,58 @@
 .promotion {
   background-color: $secondary-background-color-accent-alternate;
-  background-image: url("../../images/cat-in-backpack-desktop.@1x.jpeg");
-  color: $primary-color-text-light;
+  background-repeat: no-repeat;
+  background-position: 50% -49px, 50% 50%;
+  background-size: 78px, cover;
+  background-image: url("../../icons/gift.svg"), url("../../images/cat-in-backpack-mobile@1x.jpeg");
   font-family: $secondary-font-family;
   text-align: center;
-  padding: 80px;
+  // padding: 80px;
+  padding: 186px 56px 44px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../icons/gift.svg"),
+      url("../../images/cat-in-backpack-mobile@2x.jpeg");
+  }
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 70px 120px 70px 422px;
+    background-position: 77px 50%, 50% 50%;
+    background-size: 80px, cover;
+    background-image:
+      url("../../icons/gift.svg"),
+      url("../../images/cat-in-backpack-tablet.@1x.jpeg");
+
+    text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../icons/gift.svg"),
+        url("../../images/cat-in-backpack-tablet.@2x.jpeg");
+    }
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 186px 40px 42px;
+    background-position: 50% -46px, 50% 50%;
+    background-size: 80px, cover;
+    background-image:
+      url("../../icons/gift.svg"),
+      url("../../images/cat-in-backpack-desktop.@1x.jpeg");
+
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../icons/gift.svg"),
+        url("../../images/cat-in-backpack-desktop.@2x.jpeg");
+    }
+  }
 }
 
 .promotion__description {
+  font-family: $primary-font-family;
+  margin: 0;
   color: $primary-color-text-light;
   font-size: 16px;
   font-weight: 400;

@@ -1,22 +1,103 @@
+
+.contacts--main {
+  @media (min-width: $desktop-screen-width) {
+    position: relative;
+  }
+}
+
+
 .contacts--catalog {
   background-color: $primary-background-color-grey;
+
+  @media (min-width: $desktop-screen-width) {
+    // display: none;
+    position: relative;
+    background-color: $primary-background-color-light;
+  }
 }
 
 .contacts__description {
+  margin: 0;
+  padding-right: 10px;
   color: $additional-color-text-dark;
   font-family: $secondary-font-family;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-screen-width) {
+    margin-top: 4px;
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-top: 0;
+  }
 }
 
 .contacts__address {
+  margin: 0;
   line-height: 20px;
   font-style: normal;
+  color: $primary-color-text-dark;
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    text-align: left;
+    min-width: 157px;
+  }
+}
+
+
+.contacts-map {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 362px;
+
+  @media (min-width: $tablet-screen-width) {
+    height: 400px;
+  }
+
+  // @media (min-width: $desktop-screen-width) {
+  //   position: relative;
+  // }
 }
 
 .contacts__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-screen-width) {
+    width: 708px;
+    padding: 59px 40px 61px;
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    position: absolute;
+    z-index: 1;
+    grid-template-columns: 172px 155px;
+    width: 565px;
+    margin: 0;
+    padding: 59px 80px;
+    background-color: $primary-background-color-light;
+    inset: 95px 765px 106px 342px;
+  }
 }
