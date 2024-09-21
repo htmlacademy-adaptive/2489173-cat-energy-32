@@ -7,14 +7,14 @@
     background-color: #63a63b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image:
-      url("../../images/promo-cat-mobile@1x.jpeg"),
-      linear-gradient(#63a63b 0, #63a63b 302px, $primary-background-color-light 302px);
+    background-image: url("../../images/promo-cat-mobil@1x.webp"), url("../../images/promo-cat-mobilel@1x.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, $primary-background-color-light 302px);
 
     @media (min-resolution: 2dppx) {
       background-size: auto 302px, auto;
       background-image:
-        url("../../images/promo-cat-mobile@2x.jpeg"),
+        url("../../images/promo-cat-mobile@2x.webp"),
+        linear-gradient(#63a63b  0, #63a63b 302px, $primary-background-color-light 302px),
+        url("../../images/promo-cat-mobile@2x.jpg"),
         linear-gradient(#63a63b  0, #63a63b 302px, $primary-background-color-light 302px);
     }
   }
@@ -33,16 +33,16 @@
       content: "";
       position: absolute;
       z-index: -2;
-      inset: -200px 0 4px 50%;
+      inset: -350px 0 4px 50%;
       background-color: #63a63b;
       background-position: 0 100%;
       background-repeat: no-repeat;
-      background-image: url("../../images/promo-cat-desktop@1x.jpg");
-      // width: 720px;
+      background-image: url("../../images/promo-cat-desktop@1x.webp"), url("../../images/promo-cat-desktop@1x.jpg"), linear-gradient(#62a53a 0, #62a53a 873px);
+
       /* stylelint-disable-next-line max-nesting-depth */
       @media (min-resolution: 2dppx) {
         background-size: auto 696px;
-        background-image: url("../../images/promo-cat-desktop@2x.jpg");
+        background-image: url("../../images/promo-cat-desktop@2x.webp"), url("../../images/promo-cat-desktop@2x.jpg"), linear-gradient(#62a53a 0, #62a53a 873px);
       }
     }
   }
@@ -51,7 +51,6 @@
 .header-promo__inner {
   @media (min-width: $tablet-screen-width) {
     position: relative;
-
     padding: 0 90px 526px;
   }
 
@@ -61,12 +60,10 @@
   }
 }
 
-
 .header-promo__heading {
   @include title($primary-color-text-light, $secondary-font-family, 36px, 36px, 400);
   margin: 0;
   margin-bottom: 25px;
-
 
   @media (min-width: $tablet-screen-width) {
     color: $basic-color-text-dark;
@@ -93,8 +90,9 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     font-size: 20px;
+    line-height: 20px;
   }
 }
 

@@ -1,6 +1,6 @@
 .example {
   background-color: $secondary-background-color-grey;
-  padding: 25px 0 18px;
+  padding: 25px 0 24px;
 
   @media (min-width: $tablet-screen-width) {
     padding-top: 43px;
@@ -25,7 +25,7 @@
 }
 
 .example__content {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-screen-width) {
     display: grid;
@@ -70,7 +70,7 @@
 
   @media (min-width: $desktop-screen-width) {
     grid-column: 1 / -2;
-    margin-top: 97px;
+    margin-top: 93px;
     margin-bottom: 66px;
     padding-right: 35px;
   }
@@ -78,7 +78,7 @@
 
 .example__list {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -169,7 +169,7 @@
     padding-left: 0;
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: 1fr 42px 1fr;
+    grid-template-columns: 1fr 35px 1fr;
     text-align: left;
 
     span:first-child {
@@ -230,21 +230,7 @@
       max-width: none;
     }
   }
-
-  // @media (min-width: $desktop-screen-width) {
-  //   img {
-  //     width: 588px;
-  //     height: 511px;
-  //     max-width: none;
-  //   }
-  // }
 }
-
-// .example__image img {
-//   @media (min-width: $tablet-screen-width) {
-//     margin-left: 5px;
-//   }
-// }
 
 .example__image--before img {
   @media (min-width: $tablet-screen-width) {
@@ -284,7 +270,9 @@
   background-color: transparent;
   color: $special-background-color-dark;
   position: absolute;
-  left: 40%;
+  left: 50%;
+  transform: translate(-25px);
+  outline: none;
 
   &::before {
     position: absolute;
@@ -314,6 +302,7 @@
     transform: translate(0%, 269%);
   }
 
+  &:focus-visible,
   &:hover {
     &::before {
       background: #68b738;
@@ -329,16 +318,6 @@
 
 @media (min-width: $tablet-screen-width) {
   .example__button {
-    left: 46%;
-    top: 24px;
-    mask-size: 40px 512px;
-  }
-}
-
-@media (min-width: $desktop-screen-width) {
-  .example__button {
-    top: 0;
-    left: 45%;
     mask-size: 40px 512px;
   }
 }

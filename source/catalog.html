@@ -10,12 +10,14 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-header__nav">
+    <nav class="main-header__nav main-header__nav--nojs">
       <div class="main-header__wrap main-header__wrap--catalog">
 
         <a class="main-header__logo logo" href="index.html">
@@ -46,9 +48,9 @@
     </nav>
   </header>
   <main class="page__main-container main-container">
-    <header class="main-container__header container">
+    <section class="main-container__header container">
       <h1 class="main-container__heading">Каталог продукции</h1>
-    </header>
+    </section>
 
     <section class="main-container__list products-list">
       <div class="products-list__inner container">
@@ -62,8 +64,9 @@
 
           <div class="product__picture">
             <picture>
-              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/card-1-tablet-desktop@1x.png 1x, ./images/card-1-tablet-desktop@2x.png 2x">
-              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/card-1-tablet-desktop@1x.png 1x, ./images/card-1-tablet-desktop@2x.png 2x">
+              <source width="161" height="172" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-1-tablet-desktop@1x.webp 1x, ./images/card-1-tablet-desktop@2x.webp 2x">
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="./images/card-1-tablet-desktop@1x.webp 1x, ./images/card-1-tablet-desktop@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-1-mobile@1x.webp 1x, ./images/card-1-mobile@2x.webp 2x">
               <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/card-1-tablet-desktop@1x.png 1x, ./images/card-1-tablet-desktop@2x.png 2x">
               <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/card-1-tablet-desktop@1x.png 1x, ./images/card-1-tablet-desktop@2x.png 2x">
               <img class="product__img" src="images/card-1-mobile@1x.png" srcset="images/card-1-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy Pro 500 г со вкусом курицы">
@@ -87,6 +90,9 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="172" height="196" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-2-desktop@1x.webp 1x, ./images/card-2-desktop@2x.webp 2x">
+              <source width="168" height="206" type="image/webp" media="(min-width: 768px)" srcset="./images/card-2-tablet@1x.webp 1x, ./images/card-2-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-2-mobile@1x.webp 1x, ./images/card-2-mobile@2x.webp 2x">
               <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/card-2-desktop@1x.png 1x, ./images/card-2-desktop@2x.png 2x">
               <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="./images/card-2-tablet@1x.png 1x, ./images/card-2-tablet@2x.png 2x">
               <img class="product__img" src="images/card-2-mobile@1x.png" srcset="images/card-2-mobile@2x.png 2x" width="84" height="100" alt="Cat Energy Pro 1000 г со вкусом курицы">
@@ -110,6 +116,9 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="163" height="174" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-3-tablet-destop@1x.webp 1x, ./images/card-3-tablet-destop@2x.webp 2x">
+              <source width="163" height="174" type="image/webp" media="(min-width: 768px)" srcset="./images/card-3-tablet-destop@1x.webp 1x, ./images/card-3-tablet-destop@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-3-mobile@1x.webp 1x, ./images/card-3-mobile@2x.webp 2x">
               <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/card-3-tablet-destop@1x.png 1x, ./images/card-3-tablet-destop@2x.png 2x">
               <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/card-3-tablet-destop@1x.png 1x, ./images/card-3-tablet-destop@2x.png 2x">
               <img class="product__img" src="images/card-3-mobile@1x.png" srcset="images/card-3-mobile@2x.png 2x" width="68" height="78" alt="Cat Energy Pro 500 г со вкусом рыба">
@@ -131,6 +140,9 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="172" height="196" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-4-desktop@1x.webp 1x, ./images/card-4-desktop@2x.webp 2x">
+              <source width="168" height="200" type="image/webp" media="(min-width: 768px)" srcset="./images/card-4-tablet@1x.webp 1x, ./images/card-4-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-4-mobile@1x.webp 1x, ./images/card-4-mobile@2x.webp 2x">
               <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/card-4-desktop@1x.png 1x, ./images/card-4-desktop@2x.png 2x">
               <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/card-4-tablet@1x.png 1x, ./images/card-4-tablet@2x.png 2x">
               <img class="product__img" src="images/card-4-mobile@1x.png" srcset="images/card-4-mobile@2x.png 2x" width="84" height="100" alt="Cat Energy Pro 100 г со вкусом рыбы">
@@ -153,6 +165,9 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="161" height="171" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-5-tablet-desktop@1x.webp 1x, ./images/card-5-tablet-desktop@2x.webp 2x">
+              <source width="161" height="171" type="image/webp" media="(min-width: 768px)" srcset="./images/card-5-tablet-desktop@1x.webp 1x, ./images/card-5-tablet-desktop@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-5-mobile@1x.webp 1x, ./images/card-5-mobile@2x.webp 2x">
               <source width="161" height="171" type="image/png" media="(min-width: 1440px)" srcset="./images/card-5-tablet-desktop@1x.png 1x, ./images/card-5-tablet-desktop@2x.png 2x">
               <source width="161" height="171" type="image/png" media="(min-width: 768px)" srcset="./images/card-5-tablet-desktop@1x.png 1x, ./images/card-5-tablet-desktop@2x.png 2x">
               <img class="product__img" src="images/card-5-mobile@1x.png" srcset="images/card-5-mobile@2x.png 2x" width="68" height="78" alt="Cat Energy Pro 500 г со вкусом гречки">
@@ -175,6 +190,9 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="172" height="196" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-6-desktop@1x.webp 1x, ./images/card-6-desktop@2x.webp 2x">
+              <source width="168" height="200" type="image/webp" media="(min-width: 768px)" srcset="./images/card-6-tablet@1x.webp 1x, ./images/card-6-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-6-mobile@1x.webp 1x, ./images/card-6-mobile@2x.webp 2x">
               <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/card-6-desktop@1x.png 1x, ./images/card-6-desktop@2x.png 2x">
               <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/card-6-tablet@1x.png 1x, ./images/card-6-tablet@2x.png 2x">
               <img class="product__img" src="images/card-6-mobile@1x.png" srcset="images/card-6-mobile@2x.png 2x" width="84" height="100" alt="Cat Energy Pro 500 г со вкусом гречки">
@@ -197,6 +215,10 @@
           </a>
           <div class="product__picture">
             <picture>
+              <source width="163" height="174" type="image/webp" media="(min-width: 1440px)" srcset="./images/card-7-tablet-desktop@1x.webp 1x, ./images/card-7-tablet-desktop@2x.webp 2x">
+              <source width="163" height="174" type="image/webp" media="(min-width: 768px)" srcset="./images/card-7-tablet-desktop@1x.webp 1x, ./images/card-7-tablet-desktop@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="./images/card-7-mobile@1x.webp 1x, ./images/card-7-mobile@2x.webp 2x">
+
               <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/card-7-tablet-desktop@1x.png 1x, ./images/card-7-tablet-desktop@2x.png 2x">
               <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/card-7-tablet-desktop@1x.png 1x, ./images/card-7-tablet-desktop@2x.png 2x">
               <img class="product__img" src="images/card-7-mobile@1x.png" srcset="images/card-7-mobile@2x.png 2x" width="72" height="84" alt="Cat Energy Pro 500 г со вкусом риса">
@@ -276,10 +298,10 @@
             <a class="additional-product__button button" href="#">Заказать</a>
           </li>
         </ul>
-        <div class="additional-products__promotion promotion ">
+        <section class="additional-products__promotion promotion ">
           <h3 class="visually-hidden">Специальное предложение</h3>
           <p class="promotion__description">Закажите все <br>и получите чехол для кота в подарок!</p>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -298,31 +320,39 @@
       </div>
     </section>
 
-    <footer class="main-container__contacts contacts contacts--catalog">
-      <div class="contacts__inner container">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__description">приглашаем <br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
-        </p>
-      </div>
-      <!-- <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, /images/map-tablet@2x.png 2x">
-        <img class="contacts-map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с магазином">
-      </picture> -->
+    <section class="main-container__contacts contacts contacts--catalog">
+      <div class="contacts-wrapper">
 
-      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725535358266!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+        <div class="contacts__inner container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__description">Приглашаем <br> к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+      </div>
+      <div class="contacts-map-script-wrap contacts-map-script-wrap--nojs">
+        <iframe class="contacts-map-script " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725535358266!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <noscript>
+        <picture>
+          <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp 1x, ./images/map-desktop@2x.webp 2x">
+          <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
+          <source width="280" height="256" type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x">
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
+          <img class="contacts-map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с магазином">
+        </picture>
+      </noscript>
+    </section>
   </main>
 
   <footer class="page__main-footer main-footer">
     <div class="main-footer__inner container">
       <a class="main-footer__logo " href="#">
         <span class="visually-hidden">"Текстовый логотип Cat Energy"</span>
-        <!-- <span class="logo__footer"></span> -->
-        <!-- <img class="logo-text" width="101" height="18" src="./images/logo-text.svg" alt="Текстовый логотип Cat Energy"> -->
       </a>
 
       <ul class="main-footer__social social">
@@ -346,14 +376,10 @@
 
       <a class="main-footer__developer developer " href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noreferrer noopener">
         <span class="developer__website-developer">HTML Academy</span>
-        <!-- <img class="" src="#" width="27" height="34" alt="Логотип Html Academy " aria-hidden="true"> -->
-        <!-- <span class="developer__image"></span> -->
-
       </a>
     </div>
 
   </footer>
-  <script src="index.js"></script>
 
 </body>
 

@@ -22,33 +22,10 @@
     background-color: $special-background-color-dark;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     &::after {
       background-color: $primary-background-color-accent;
     }
   }
-
-  // &:active {
-  //   &::after {
-  //     background-color: $secondary-background-color-accent-alternate;
-  //   }
-  // }
 }
-
-// .developer__image {
-//   display: block;
-//   width: 27px;
-//   height: 34px;
-//   mask-image: url("../../icons/stack.svg#logo-html-academy");
-//   mask-repeat: no-repeat;
-//   mask-position: center;
-//   background-color: $special-background-color-dark;
-// }
-
-// .developer__image:hover {
-//   background-color: $primary-background-color-accent;
-// }
-
-// .developer__image:active {
-//   background-color: $secondary-background-color-accent-alternate;
-// }

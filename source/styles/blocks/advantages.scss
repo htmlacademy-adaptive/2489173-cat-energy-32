@@ -18,18 +18,10 @@
   margin: 0;
   margin-bottom: 40px;
 
-  &:not(:last-child) {
-    margin-bottom: 42px;
-  }
-
   @media (min-width: $tablet-screen-width) {
-    margin-bottom: 32px;
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
-
-    &:not(:last-child) {
-      margin-bottom: 54px;
-    }
   }
 }
 
@@ -73,7 +65,7 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    padding-top: 15px;
+    padding-top: 17px;
     padding-right: 0;
   }
 

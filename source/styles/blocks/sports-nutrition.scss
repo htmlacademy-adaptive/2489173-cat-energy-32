@@ -1,6 +1,4 @@
 .sports-nutrition {
-  // padding-top: 20px;
-
   @media (min-width: $tablet-screen-width) {
     padding-top: 0;
   }
@@ -17,7 +15,7 @@
 
   @media (min-width: $desktop-screen-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 570px;
     gap: 80px;
   }
 }
@@ -33,19 +31,19 @@
 
   @media (min-width: $desktop-screen-width) {
     padding: 47px 35px 60px 52px;
+    display: flex;
+    flex-direction: column;
   }
 
 
   & + & {
-    margin-top: 20px;
+    margin-top: 23px;
 
     @media (min-width: $tablet-screen-width) {
       margin-top: 30px;
     }
 
     @media (min-width: $desktop-screen-width) {
-      display: flex;
-      flex-direction: column;
       margin-top: 0;
     }
   }
@@ -72,7 +70,7 @@
   @media (min-width: $desktop-screen-width) {
     position: relative;
     min-height: 100px;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
     padding-left: 162px;
   }
 
@@ -141,7 +139,6 @@
   }
 }
 
-
 .sports-nutrition__heading--pro {
   &::after {
     top: 11px;
@@ -195,7 +192,6 @@
 .sports-nutrition__link {
   display: grid;
   grid-template-columns: max-content 32px;
-  // display: flex;
   align-items: center;
   gap: 17px;
   font-family: $secondary-font-family;
@@ -213,12 +209,12 @@
 
   @media (min-width: $desktop-screen-width) {
     margin-top: auto;
+    margin-right: auto;
   }
 
   &::after {
     content: "";
     width: 24px;
-    // display: block;
     height: 10px;
     mask-image: url("../../icons/arrow.svg");
     mask-repeat: no-repeat;

@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-screen-width) {
     display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
     font-size: 18px;
     line-height: 24px;
     flex-wrap: wrap;
@@ -87,7 +87,6 @@
   text-decoration: none;
 
   @media (min-width: $tablet-screen-width) {
-    // padding: 17px;
     padding: 21px 18px 21px 16px;
   }
 

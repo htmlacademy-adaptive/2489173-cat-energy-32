@@ -41,18 +41,6 @@
   @media (max-width: $mobile-screen-width) {
     margin-bottom: 18.5px;
   }
-
-  // &:hover {
-  //   &::before {
-  //     background-color: #3a3a3a;
-  //   }
-  // }
-
-  // &:active {
-  //   &::before {
-  //     background-color: #6b6b6b;
-  //   }
-  // }
 }
 
 .main-footer__logo:hover::before {
