@@ -1,0 +1,49 @@
+.social {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+
+  &::before {
+    content: "";
+    display: block;
+    mask-image: var(--icon);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    height: 22px;
+    width: 28px;
+    background: $special-background-color-dark;
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::before {
+      background: $primary-background-color-accent;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+}
+
+.social__link--vkontakte {
+  --icon: url("../../icons/stack.svg#vkontakte");
+}
+
+.social__link--youtube {
+  --icon: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  --icon: url("../../icons/stack.svg#telegram");
+}

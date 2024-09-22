@@ -1,0 +1,104 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+.show-more {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 0 25px;
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+  background-size: 30px 30px;
+  background-image: url("../../icons/plus-small.svg");
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 0;
+    width: 324px;
+    height: 429px;
+    background-size: 60px 60px;
+    background-position: 50% 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url("../../icons/plus-big.svg");
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 0 38px;
+    width: 245px;
+    min-height: 430px;
+    background-position: 50% 48px;
+    background-size: 60px 60px;
+    background-image: url("../../icons/plus-big.svg");
+  }
+}
+
+.show-more__heading {
+  position: relative;
+  margin: 0;
+  margin-bottom: 6px;
+  color: $additional-color-text-dark;
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 160px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    padding-top: 150px;
+    margin-bottom: 24px;
+  }
+}
+
+.show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-right: 77px;
+    padding-left: 77px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 0;
+    margin-bottom: 90px;
+  }
+}
+
+.show-more__button {
+  @media (min-width: $tablet-screen-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 250px;
+    align-self: center;
+    padding: 10px 26px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 169px;
+    padding: 9px 10px;
+  }
+}

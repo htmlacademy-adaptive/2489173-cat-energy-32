@@ -1,0 +1,17 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: $primary-font-family, sans-serif;
+  line-height: 27px;
+}
+
+.page__body {
+  color: $primary-color-text-dark;
+  background-color: $primary-background-color-light;
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

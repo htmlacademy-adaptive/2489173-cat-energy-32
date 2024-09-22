@@ -1,0 +1,31 @@
+.developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $primary-font-family;
+  color: $primary-color-text-dark;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#logo-html-academy");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $special-background-color-dark;
+  }
+
+  &:hover,
+  &:focus-visible {
+    &::after {
+      background-color: $primary-background-color-accent;
+    }
+  }
+}

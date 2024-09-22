@@ -1,0 +1,110 @@
+.site-menu {
+  color: $basic-color-text-dark;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-family: $secondary-font-family;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0;
+
+  @media (max-width: $mobile-screen-width) {
+    border-top: 1px solid #e6e6e6;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 24px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    font-size: 20px;
+  }
+}
+
+.site-menu__item {
+  @media (max-width: $mobile-screen-width) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.site-menu__item--current {
+  @media (min-width: $tablet-screen-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12px;
+      right: 17px;
+      left: 17px;
+      height: 2px;
+      background-color: $primary-background-color-accent;
+    }
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      right: 17px;
+      left: 17px;
+      height: 2px;
+      background-color: $primary-background-color-light;
+    }
+  }
+}
+
+.site-menu--catalog .site-menu__item--current {
+  @media (min-width: $desktop-screen-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      right: 17px;
+      left: 17px;
+      height: 2px;
+      background-color: $primary-background-color-accent;
+    }
+  }
+}
+
+.site-menu__link {
+  display: block;
+  padding: 23px 22px 22px;
+  color: $basic-color-text-dark;
+  text-decoration: none;
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 21px 18px 21px 16px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 21px 17px;
+  }
+
+  &:link:hover {
+    opacity: 0.6;
+  }
+
+  &:link:active {
+    opacity: 0.3;
+  }
+}
+
+.site-menu--main .site-menu__link {
+  @media (min-width: $desktop-screen-width) {
+    color: $primary-color-text-light;
+  }
+}

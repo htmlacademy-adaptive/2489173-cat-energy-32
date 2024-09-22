@@ -1,0 +1,240 @@
+.sports-nutrition {
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-top: 78px;
+  }
+}
+
+.sports-nutrition__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
+.sports-nutrition__item {
+  background-color: $primary-background-color-grey;
+  padding: 21px 33px 18px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-screen-width) {
+    padding: 69px 316px 60px 52px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 47px 35px 60px 52px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  & + & {
+    margin-top: 23px;
+
+    @media (min-width: $tablet-screen-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.sports-nutrition__heading {
+  @include title($basic-color-text-dark, $secondary-font-family, 24px, 36px, 400);
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  min-height: 50px;
+  margin: 0;
+  margin-bottom: 22px;
+  padding-left: 72px;
+  align-items: center;
+
+  @media (min-width: $tablet-screen-width) {
+    position: static;
+    padding-left: 0;
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    position: relative;
+    min-height: 100px;
+    margin-bottom: 41px;
+    padding-left: 162px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $primary-background-color-accent;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-screen-width) {
+      top: calc(50% - 95px);
+      right: 62px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      top: calc(50% - 50px);
+      right: auto;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    background-size: contain;
+  }
+}
+
+.sports-nutrition__heading--slim {
+  &::after {
+    top: -3px;
+    left: 7px;
+    background-image: url("../../icons/cat-slim.svg");
+    width: 36px;
+    height: 50px;
+
+    @media (min-width: $tablet-screen-width) {
+      top: calc(50% - 106px);
+      right: 92px;
+      left: auto;
+
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      top: calc(50% - 54px);
+      left: 15px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.sports-nutrition__heading--pro {
+  &::after {
+    top: 11px;
+    left: -10px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/cat-pro.svg");
+
+    @media (min-width: $tablet-screen-width) {
+      top: calc(50% - 51px);
+      right: 28px;
+      left: auto;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      top: calc(50% - 30px);
+      left: -19px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
+.sports-nutrition__description {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+
+  color: $primary-color-text-dark;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.sports-nutrition__link {
+  display: grid;
+  grid-template-columns: max-content 32px;
+  align-items: center;
+  gap: 17px;
+  font-family: $secondary-font-family;
+  color: $basic-color-text-dark;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 20px;
+    gap: 27px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-top: auto;
+    margin-right: auto;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 10px;
+    mask-image: url("../../icons/arrow.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: $basic-color-text-dark;
+    transition: transform 1ms linear;
+    transform-origin: left center;
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleX(1.35);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      transform: scaleX(1.35);
+    }
+  }
+}

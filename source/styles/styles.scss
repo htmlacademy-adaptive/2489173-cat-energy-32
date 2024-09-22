@@ -1,7 +1,33 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
-
+@import "./common/global.scss";
 /* BLOCKS */
-@import "./blocks/header.scss";
+/* BLOCK Index */
+@import "./blocks/button.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/container.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/site-menu.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/header-promo.scss";
+@import "./blocks/sports-nutrition.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/developer.scss";
+/* BLOCK Catalog */
+@import "./blocks/catalog-products.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/product.scss";
+@import "./blocks/show-more.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/promotion.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/subscribe-form.scss";
+@import "./blocks/visually-hidden.scss";

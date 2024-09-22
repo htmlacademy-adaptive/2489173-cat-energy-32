@@ -1,0 +1,33 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+.logo {
+  @media (max-width: $mobile-screen-width) {
+    display: grid;
+    grid-template-columns: 33px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  @media (min-width: $tablet-screen-width) {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+
+.logo__text {
+  justify-self: center;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}

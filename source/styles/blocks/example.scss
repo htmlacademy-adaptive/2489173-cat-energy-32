@@ -1,0 +1,355 @@
+.example {
+  background-color: $secondary-background-color-grey;
+  padding: 25px 0 24px;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 43px;
+    padding-bottom: 62px;
+    border-top: 1px solid #e6e6e6;
+    background-image: linear-gradient(to top, $secondary-button-color-grey-alternate 462px, $primary-background-color-light 462px);
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-top: 22px;
+    padding-bottom: 69px;
+    border-top: none;
+  }
+}
+
+.example__inner {
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    gap: 153px;
+  }
+}
+
+.example__content {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-screen-width) {
+    display: grid;
+    grid-template-columns: 366px 1fr;
+    column-gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 0;
+    grid-template-columns: 366px 70px 1fr;
+  }
+}
+
+.example__heading {
+  @include title($basic-color-text-dark, $secondary-font-family, 36px, 40px, 400);
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-screen-width) {
+    grid-column: 1 / -1;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+
+.example__discription {
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: $primary-color-text-dark;
+
+  @media (min-width: $tablet-screen-width) {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    margin-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    grid-column: 1 / -2;
+    margin-top: 93px;
+    margin-bottom: 66px;
+    padding-right: 35px;
+  }
+}
+
+.example__list {
+  margin-top: 0;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  text-align: center;
+
+
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 0;
+    gap: 42px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 55px;
+    grid-column: 1 / 2;
+    gap: 42px;
+  }
+}
+
+.example__item {
+  padding: 12px 8px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 20px;
+  }
+}
+
+.example__title {
+  font-size: 12px;
+  width: 87px;
+  margin-bottom: -12px;
+  padding: 0 4px;
+  color: $primary-color-text-dark;
+  background-color: #ebebeb;
+  line-height: 100%;
+  text-transform: lowercase;
+
+  @media (min-width: $tablet-screen-width) {
+    width: auto;
+    margin-bottom: -6px;
+    padding: 0 7px;
+    background-color: $primary-background-color-light;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    background-color: #ebebeb;
+  }
+}
+
+.example__digital-value {
+  margin: 0;
+  margin-bottom: 9px;
+  color: $basic-color-text-dark;
+  font-family: $secondary-font-family;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+}
+
+.example__spending {
+  color: $basic-color-text-dark;
+  font-family: $secondary-font-family;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-left: 50px;
+    align-self: center;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-left: 0;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 35px 1fr;
+    text-align: left;
+
+    span:first-child {
+      grid-column: 1 / 3;
+    }
+
+    span:last-child {
+      text-align: center;
+    }
+  }
+}
+
+.example__images {
+  position: relative;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  overflow: hidden;
+
+  @media (min-width: $tablet-screen-width) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 23px 63px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 0;
+  }
+}
+
+.example__image {
+  display: flex;
+  overflow: hidden;
+
+  & img {
+    @media (min-width: $tablet-screen-width) {
+      margin-left: 5px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: $mobile-screen-width) {
+    img {
+      width: 280px;
+      height: 256px;
+      max-width: none;
+    }
+  }
+
+  @media (min-width: $tablet-screen-width) {
+    img {
+      width: 592px;
+      height: 511px;
+      max-width: none;
+    }
+  }
+}
+
+.example__image--before img {
+  @media (min-width: $tablet-screen-width) {
+    width: 585px;
+    height: 511px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 558px;
+    height: 511px;
+    max-width: none;
+  }
+}
+
+.example__image--after img {
+  @media (min-width: $tablet-screen-width) {
+    width: 581px;
+    height: 511px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 565px;
+    height: 511px;
+    max-width: none;
+  }
+}
+
+.example__image--after {
+  justify-content: end;
+}
+
+.example__button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: $special-background-color-dark;
+  position: absolute;
+  left: 50%;
+  transform: translate(-25px);
+  outline: none;
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 256px;
+    mask-image: url("../../icons/switcher.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 40px 256px;
+    background: #666666;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(0%, 269%);
+  }
+
+  &:focus-visible,
+  &:hover {
+    &::before {
+      background: #68b738;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: $tablet-screen-width) {
+  .example__button {
+    mask-size: 40px 512px;
+  }
+}
+
+@media (min-width: $tablet-screen-width) {
+  .example__button::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 512px;
+    mask-image: url("../../icons/switcher.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 40px 512px;
+    background: #666666;
+  }
+}
+
+@media (min-width: $tablet-screen-width) {
+  .example__button::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(0%, 589%);
+  }
+}
